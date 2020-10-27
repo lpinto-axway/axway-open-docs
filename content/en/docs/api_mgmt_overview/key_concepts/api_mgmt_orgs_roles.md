@@ -107,7 +107,7 @@ Organization administrators have full read access to users and applications in t
 
 The Organization administrator cannot demote another Organization administrator to a `user` role.
 
-By default, organization administrators require approval from an Administrator to publish APIs owned by users in their organization, and they are not allowed to unpublish APIs. By setting `api.manager.orgadmin.selfservice.enabled` system property to `true`, the Organization administrator will no longer require approval, and will be able to directly publish and unpublish APIs in their own organization.
+By default, organization administrators require approval from an Administrator to publish APIs owned by users in their organization, and they are not allowed to unpublish APIs. By setting `api.manager.orgadmin.selfservice.enabled` system property to `true`, the organization administrator will no longer require approval, and will be able to directly publish and unpublish APIs in their own organization. In addition, the organization administrator will also be able to deprecate, undeprecate, retire, upgrade and grant access to APIs. In order to grant API access to any organization in API Manager, the organization administrator needs to have access to all the organizations and proxies. This facility is also available by the switching on of this system property.
 
 ### API consumer
 
