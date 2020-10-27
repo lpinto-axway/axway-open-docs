@@ -5,7 +5,6 @@
   "date": "2019-09-17",
   "description": "Learn about the API administrator, organization administrator, and API consumer roles in API management."
 }
-
 ## API Gateway user roles
 
 API Gateway provides the following main user roles.
@@ -107,7 +106,7 @@ Organization administrators have full read access to users and applications in t
 
 The Organization administrator cannot demote another Organization administrator to a `user` role.
 
-By default, organization administrators require approval from an Administrator to publish APIs owned by users in their organization, and they are not allowed to unpublish APIs. By setting `api.manager.orgadmin.selfservice.enabled` system property to `true`, the Organization administrator will no longer require approval, and will be able to directly publish and unpublish APIs in their own organization.
+By default, organization administrators require approval from an Administrator to publish APIs owned by users in their organization, and they are not allowed to unpublish APIs. By setting `api.manager.orgadmin.selfservice.enabled` system property to `true`, the organization administrator will no longer require approval, and will be able to directly publish and unpublish APIs in their own organization. In addition, the organization administrator will also be able to deprecate, undeprecate, retire, upgrade and grant access to APIs. Note that in order to grant API access to any organization in API Manager, the organization administrator needs to have access to all the organizations and proxies. With the enablement of the system property, this provision is available to an organization administrator.
 
 ### API consumer
 
